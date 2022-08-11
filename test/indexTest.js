@@ -1,7 +1,11 @@
 const sinon = require( 'sinon' )
 
 describe('index.js', function () {
+
   describe('findMatching()', function () {
+
+
+
     it('returns all drivers that match the passed in name', function () {
       const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby']
 
@@ -21,6 +25,8 @@ describe('index.js', function () {
       expect(findMatching(drivers, 'Susan')).to.eql([]);
     });
   });
+
+
 
   describe('fuzzyMatch()', function () {
     const drivers = [];
@@ -44,6 +50,12 @@ describe('index.js', function () {
     });
   });
 
+
+
+
+
+
+  
   describe('matchName()', function () {
     it('accesses the data structure to check if name matches', function () {
       const drivers = [
